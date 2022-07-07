@@ -21,12 +21,4 @@ import dagger.hilt.android.HiltAndroidApp
 
 // triggers Hilt code generation
 @HiltAndroidApp
-class LogApplication : Application() {
-
-    lateinit var serviceLocator: ServiceLocator
-
-    override fun onCreate() {
-        super.onCreate()
-        serviceLocator = ServiceLocator(applicationContext)
-    }
-}
+class LogApplication : Application()
